@@ -1,8 +1,16 @@
-dateModified: 1675658606
+dateModified: 1676315799
 email:
   fromEmail: info@putyourlightson.net
   fromName: 'Craft Coding Challenge'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  default:
+    hasUrls: true
+    name: Default
+    settings:
+      path: $GENERATED_IMAGES_PATH
+    type: craft\fs\Local
+    url: //generated-images/
 graphql:
   publicToken:
     enabled: false
@@ -10,11 +18,24 @@ graphql:
 meta:
   __names__:
     0d89c679-f6f5-42ae-8341-4bea917c6af7: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
+    5c1add6b-2f64-4826-804b-6050eb97fd70: Image # Image
+    8c7521b0-a65a-4571-821f-11c41d6761df: Articles # Articles
     0779f354-f5d2-4f82-9a36-28a252f70ce4: 'Public Schema' # Public Schema
     31006d4c-2f40-498c-9a4c-69cff4fd4279: Common # Common
-    b55012be-3f7f-4150-b59c-5a6623c00743: 'Public Schema'
+    b55012be-3f7f-4150-b59c-5a6623c00743: 'Public Schema' # Public Schema
     c7c2807b-84cc-4e1f-9279-af044bc0b472: 'Public Schema' # Public Schema
+    ef49b0b2-0f0c-40a6-b8e6-40b3baab9c49: Default # Default
     f255ef6d-0c55-4bdc-9ced-f610bbb3bed6: $CRAFT_SITE_NAME # $CRAFT_SITE_NAME
+    fe49ae91-070d-4ef6-b72a-401890dc2146: Default # Default
+plugins:
+  craft-dalle:
+    edition: standard
+    enabled: true
+    licenseKey: 8VVR1VB7896U3Z6V57P0HF37
+    schemaVersion: 1.0.0
+    settings:
+      apiKey: $OPEN_API_KEY
+      count: '4'
 system:
   edition: pro
   live: true
